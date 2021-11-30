@@ -1,0 +1,90 @@
+{
+	"info": {
+		"_postman_id": "8f4a81ed-00fa-4da0-aa7f-641a1c5f9c88",
+		"name": "ApiGatewayServicios",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8090/api/servicios/servicios//tarjetasCredito/create",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": " {\r\n   \r\n    \"limiteCredito\": 490.0,\r\n    \"fechaapertura\": \"2021-09-20\",\r\n    \"cliente\": {\r\n        \"id\": \"61a0741c09a6511591c1cb61\"\r\n    },\r\n    \"fechaPago\": \"2021-10-20\",\r\n    \"firmante\": \"juan\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8090/api/servicios/servicios//tarjetasCredito/create",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"api",
+						"servicios",
+						"servicios",
+						"",
+						"tarjetasCredito",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8090/api/servicios/servicios//tarjetasCredito/61a55121758f3c129bb6ad4d",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8090/api/servicios/servicios//tarjetasCredito/61a55121758f3c129bb6ad4d",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"api",
+						"servicios",
+						"servicios",
+						"",
+						"tarjetasCredito",
+						"61a55121758f3c129bb6ad4d"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8090/api/servicios/servicios//tarjetasCredito/listar",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8090/api/servicios/servicios//tarjetasCredito/listar",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"api",
+						"servicios",
+						"servicios",
+						"",
+						"tarjetasCredito",
+						"listar"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
